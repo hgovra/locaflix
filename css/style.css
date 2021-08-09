@@ -1,5 +1,116 @@
+:root {
+    --bg: #16804d;
+    --txt: #ededed;
+    --blk: #626262;
+    --inv: #202020;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--txt);
+}
+
+.btn {
+    padding: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    background: var(--inv);
+    color: #FFF;
+    border: 0;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background: var(--txt);
+    color: var(--bg)
+}
+
+
+/* Header */
+
+#header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 42px;
+    background: linear-gradient(to right, var(--txt), #dfde3d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+
+/* Site Menu */
+
+#site-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#site-menu li {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+/* Home Banner */
+
+#home-banner {
+    background: linear-gradient(to right, rgba(94, 91, 91, 0.753) 20%, rgba(0, 0, 0, 0)), url(../img/01.jpg) center center;
+    height: 480px;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 0;
+    border-radius: 20px;
+    cursor: default;
+}
+
+#home-banner .content {
+    padding-top: 180px;
+    width: 60%;
+}
+
+#home-banner span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#home-banner h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+#home-banner .btn-container {
+    margin-top: 10px;
+}
+
+
+/* Other Cars */
+
+#car-ousel {
+    margin: 0 10px;
+}
+
+#car-ousel .car {
+    margin: 0 10px;
+    border-radius: 20px;
+    overflow: hidden;
 }

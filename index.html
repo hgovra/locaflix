@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locaflix</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/carousel/owl.theme.green.min.css">
+
 </head>
 
 <body>
@@ -16,21 +23,60 @@
 
         <nav id="site-menu">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Carros</li>
+                <li>Agências</li>
+                <li>Empresas</li>
+                <li>Contato</li>
             </ul>
         </nav>
     </header>
 
     <section id="home-banner">
+        <div class="content">
+            <span class="home-banner-tag">#Destaque</span>
 
+            <h2>Mercedes-Benz AMG Classe-C W205</h2>
+            <p>O Classe C alia esportividade a inovações e tecnologias. O resultado é um pacote altamente interessante para muitos clientes que preenche diversos requisitos.</p>
+            <div class="btn-container">
+                <button class="btn">Reservar</button>
+                <button class="btn">Mais Informações</button>
+            </div>
+        </div>
     </section>
 
-    <section id="cars">
-
+    <section id="car-ousel">
+        <ul id="cars" class="owl-carousel owl-theme">
+            <div class="car">
+                <img src="img/02.jpg" alt="">
+            </div>
+            <div class="car">
+                <img src="img/03.jpg" alt="">
+            </div>
+            <div class="car">
+                <img src="img/04.jpg" alt="">
+            </div>
+            <div class="car">
+                <img src="img/05.jpg" alt="">
+            </div>
+            <div class="car">
+                <img src="img/06.jpg" alt="">
+            </div>
+            <div class="car">
+                <img src="img/07.jpg" alt="">
+            </div>
+            <div class="car">
+                <img src="img/08.jpg" alt="">
+            </div>
+            <div class="car">
+                <img src="img/09.jpg" alt="">
+            </div>
+        </ul>
     </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
