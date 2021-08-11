@@ -10,4 +10,4 @@ Note: This was made as part of the LocalizaLabs React Developer bootcamp by Digi
 ## Libraries & plugins
 
 - jQuery
-- OwnCarousel
+- OwlCarousel
