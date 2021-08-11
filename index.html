@@ -21,58 +21,47 @@
     <header id="header">
         <h1 id="site-name">Netflix</h1>
 
-        <nav id="site-menu">
-            <ul>
-                <li>Carros</li>
-                <li>Agências</li>
-                <li>Empresas</li>
-                <li>Contato</li>
+        <nav id="site-menus" class="site-menus">
+            <ul id="main-nav">
+                <li>Navegar <i class="fas fa-sort-down"></i></li>
+                <li>Kids</li>
+            </ul>
+
+            <ul id="opt-nav">
+                <li><i class="fas fa-search"></i> Buscar</li>
+                <li><i class="fas fa-bell"></i></li>
+                <li><i class="fas fa-user-circle"></i> John <i class="fas fa-sort-down"></i></li>
             </ul>
         </nav>
+
+        <div class="header-scroll"></div>
     </header>
 
     <section id="home-banner">
         <div class="content">
-            <span class="home-banner-tag">#Destaque</span>
+            <span class="home-banner-tag">Original <strong>Netflix</strong></span>
 
-            <h2>Mercedes-Benz AMG Classe-C W205</h2>
-            <p>O Classe C alia esportividade a inovações e tecnologias. O resultado é um pacote altamente interessante para muitos clientes que preenche diversos requisitos.</p>
+            <h2>Army of the Dead:<br /> Invasão em Las Vegas</h2>
+            <p>Após um surto de zumbis em Las Vegas, nos Estados Unidos, um grupo de mercenários faz uma aposta final, aventurando-se na zona de quarentena para tentar realizar o maior assalto de todos os tempos.
+            </p>
             <div class="btn-container">
-                <button class="btn">Reservar</button>
-                <button class="btn">Mais Informações</button>
+                <button class="btn"><i class="fas fa-play"></i> Assistir</button>
+                <button class="btn"><i class="fas fa-plus"></i> Minha Lista</button>
             </div>
         </div>
     </section>
 
-    <section id="car-ousel">
-        <ul id="cars" class="owl-carousel owl-theme">
-            <div class="car">
-                <img src="img/02.jpg" alt="">
-            </div>
-            <div class="car">
-                <img src="img/03.jpg" alt="">
-            </div>
-            <div class="car">
-                <img src="img/04.jpg" alt="">
-            </div>
-            <div class="car">
-                <img src="img/05.jpg" alt="">
-            </div>
-            <div class="car">
-                <img src="img/06.jpg" alt="">
-            </div>
-            <div class="car">
-                <img src="img/07.jpg" alt="">
-            </div>
-            <div class="car">
-                <img src="img/08.jpg" alt="">
-            </div>
-            <div class="car">
-                <img src="img/09.jpg" alt="">
-            </div>
-        </ul>
+    <section id="popular" class="sub-section">
+        <h3 class="section-title">Populares na Netflix</h3>
+        <div class="owl-carousel owl-theme"></div>
     </section>
 
+    <section id="featured" class="sub-section">
+        <h3 class="section-title">Em alta</h3>
+        <div class="owl-carousel owl-theme"></div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/06cbf513c8.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
 
