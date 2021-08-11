@@ -6,7 +6,6 @@ const generateShows = () => {
             let randNumber = Math.floor(Math.random() * 18) + 1;
             let finalNumber = ('0' + randNumber).slice(-2);
 
-            //console.log(finalNumber);
             let gen = '<div class="show"><img src="img/shows/' + finalNumber + '.jpg" alt=""></div>';
 
             section.find('.owl-carousel').append(gen);
@@ -22,7 +21,6 @@ $(window).on('load', function() {
     });
 
     startGen.then(function() {
-        //console.log('okkkkkk');
         $('.owl-carousel').owlCarousel({
             margin: 20,
             loop: true,
@@ -34,13 +32,10 @@ $(window).on('load', function() {
             }
         });
     })
-
-
 });
 
 $(window).on('load scroll', function() {
     if ($(this).scrollTop() > 10) {
-        //$('#header').addClass('header-scroll');
         $('#header>.header-scroll').fadeIn(200)
     } else {
         $('#header>.header-scroll').fadeOut(200);

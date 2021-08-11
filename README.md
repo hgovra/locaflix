@@ -1,15 +1,6 @@
-# locaflix 🚗
-A Netflix inspired platform for car rentals.
+# Netflix Clone
+Just a simple coding exercise mimicking Netflix interface. I may have or may not borrowed some ideas from other streaming services. :D
 
-The following project is just a basic exercise in HTML5 and CSS3 development with a few jQuery/jQuery UI code for navigation prototyping.
+I randomly generate the list of show in the bottom galleries using Promises and then applying the OwnCarousel jQuery plugin.
 
-Made as part of the LocalizaLabs React Developer bootcamp by Digital Innovation One.
-
-BMW Série 4
-Audi R8
-Honda Civic
-Dodge Viper
-BMW M3
-Ford Mustang
-Chevrolet Camaro
-Mercedes-Benz GLA
+Note: This was made as part of the LocalizaLabs React Developer bootcamp by Digital Innovation One.
