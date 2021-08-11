@@ -109,6 +109,10 @@ body {
     font-size: 30px;
 }
 
+#site-menu-mobile {
+    display: none;
+}
+
 
 /* Home Banner */
 
@@ -186,4 +190,73 @@ body {
 
 .sub-section .owl-carousel .show:hover img {
     opacity: .6;
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 999px) {
+    /* Header */
+    #header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #header h1 {
+        height: 40px;
+        width: 150px;
+        margin: 0;
+    }
+    /* Site Menu */
+    .site-menus {
+        display: none;
+    }
+    #site-menu-mobile {
+        display: block;
+        z-index: 10;
+    }
+    #site-menu-mobile ul {
+        display: flex;
+        list-style: none;
+        justify-content: end;
+    }
+    #site-menu-mobile ul li {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    /* Home Banner */
+    #home-banner {
+        background: linear-gradient(rgba(0, 0, 0, .7) 30px, rgba(0, 0, 0, 0) 80px), linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 95%), url(../img/banner.jpg);
+        background-size: cover;
+        background-position: 84%;
+        height: 100%;
+        border-bottom: 100px solid rgba(0, 0, 0, 1);
+    }
+    #home-banner .content {
+        width: 100%;
+        text-align: center;
+        padding-top: 100%;
+    }
+    #home-banner .home-banner-tag {
+        font-size: 18px;
+    }
+    #home-banner h2 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    #home-banner .content {
+        justify-content: end;
+    }
+    #home-banner .content p {
+        font-size: 15px;
+    }
+    #home-banner .btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #home-banner .btn-container .btn {
+        font-size: 16px;
+        padding: 17px;
+        margin: 0;
+    }
 }
