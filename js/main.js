@@ -1,8 +1,8 @@
 const generateShows = () => {
-    for (i = 0; i <= $('.sub-section').length; i++) {
+    for (let i = 0; i <= $('.sub-section').length; i++) {
         let section = $('.sub-section:eq(' + i + ')');
 
-        for (j = 0; j <= 11; j++) {
+        for (let j = 0; j <= 11; j++) {
             let randNumber = Math.floor(Math.random() * 18) + 1;
             let finalNumber = ('0' + randNumber).slice(-2);
 
